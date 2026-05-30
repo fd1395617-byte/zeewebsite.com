@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DESIGN 2026 | ZEE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="main">
+        <header class="navbar">
+            <div class="logo">ZEEWEBSITE</div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <input type="search" class="srch" placeholder="Type to search">
+                <button class="btn">SEARCH</button>
+            </div>
+
+            <button class="hamburger" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main class="content">
+            <section class="text-section">
+                <h1><span>ZEE WEB DESIGN 2026</span></h1>
+                <p>WELCOME TO ZEE DESIGN WEBSITE. I AM A PROFESSIONAL DESIGNER AND DEVELOPER, CRAFTING BOLD BRAND IDENTITIES AND VISUAL MAGIC WITH MODERN DESIGN.</p>
+                <p class="par">Creating powerful visuals for brands that want results, transforming concepts into designs that make an impact, and helping brands stand out and grow.</p>
+                <a class="cn" href="#">LET'S CREATE</a>
+            </section>
+
+            <aside class="form">
+                <input type="email" placeholder="Enter email here" aria-label="Email address">
+                <input type="password" placeholder="Enter password here" aria-label="Password">
+                <button class="btnn">LOGIN</button>
+                <p class="link">Don't have an account? <a href="#">Sign up</a> here.</p>
+                <p class="liw">Log in with</p>
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu ul');
+
+        if (hamburger && menu) {
+            hamburger.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
